@@ -1,0 +1,158 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+h1, form{
+  text-align: center;
+}
+
+h1{
+  font-size: 2em;
+}
+
+form #submit{
+  padding: 6px;
+  margin: 6px;
+  background-color: rgb(255, 196, 0);
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+}
+
+form #email{
+  padding: 6px;
+  margin: 6px;
+  width: 300px;
+}
+
+header{
+  top: 0;
+  background-color: #eee;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8em 5px;
+  position: sticky;
+}
+
+.logo{
+  display: inline-flex;
+  height: 36px;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  padding-left: 24px;
+}
+
+.features-grid {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: 1fr 5fr;
+  padding-top: 6em;
+  gap: 1em;
+  margin: 0 auto;
+}
+
+.features-grid i{
+  text-align: center;
+  padding: 0.5em;
+  color: darkorange;
+}
+
+.features-grid div{
+  padding: auto;
+  margin: auto 0;
+}
+
+iframe{
+  display: flex;
+  margin: 3em auto;
+}
+
+.pricing-grid{
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin: 1em auto;
+}
+
+.instrument{
+  border: solid black 1px;
+  max-width: 350px;
+}
+
+.instrument-name{
+  text-align: center;
+  padding: 12px;
+  background-color: rgb(204, 204, 204);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.instrument-price{
+  text-align: center;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.instrument-description{
+  list-style-type: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.instrument-button{
+  display: grid;
+  margin: 30px auto 15px;
+  padding: 0.5em 1.5em;
+  background-color: rgb(255, 196, 0);
+  font-size: 16px;
+}
+
+.instrument-button:hover{
+  background-color: darkorange;
+}
+
+footer{
+  background-color: rgb(204, 204, 204);
+  padding: 1em;
+  text-align: end;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  padding-left: 24px;
+}
+
+footer span{
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  header{
+    flex-direction: column;
+  }
+
+  .pricing-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .instrument{
+    width: 350px;
+    margin: auto;
+  }
+}
